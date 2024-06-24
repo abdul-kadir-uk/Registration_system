@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Student Registration System ">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+      <header>
+          <h1>Student Registration System</h1>
+          <p>A fastest and easiest way to register and manage student details efficiently.</p>
+      </header>
+
+      <!-- form section -->
+      <section>
+        <form id="studentForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" pattern="[A-Za-z ]*" title="Only alphabetical letters are allowed" required>
+            <label for="studentID">Student ID:</label>
+            <input type="number" id="studentID" name="studentID" required>
+            <label for="class">Class :</label>
+            <input type="text" id="class" name="class" required>
+            <label for="address">Address :</label>
+            <input type="text" id="address" name="address" required>
+            <label for="emailID">Email ID:</label>
+            <input type="email" id="emailID" name="emailID" required>
+            <label for="contactNo">Contact No:</label>
+            <input type="number" id="contactNo" name="contactNo" required>
+            <button id="register-btn" type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Records button  -->
+    <div id="records_btn">
+         <a href="Records.html" target="_blank"> View Records </a> 
+    </div>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
